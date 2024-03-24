@@ -1,2 +1,3 @@
-# LMUHacks2024-TeamEducation
-Hackathon theme is Education
+# LMUHacks2024 - New LMU Website
+## Created by Wesley Ng, Joshua Lee, Sammy Santos, and Simon
+
