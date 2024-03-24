@@ -1,0 +1,133 @@
+@font-face {
+  font-family: Metric-Bold;
+  src: url(LMUfonts/Metric-Bold.otf);
+  font_style: bold;
+}
+
+@font-face {
+  font-family: Metric-Semibold;
+  src: url(LMUfonts/Metric-Semibold.otf);
+  font_style: semibold;
+}
+
+@font-face {
+  font-family: Metric;
+  src: url(LMUfonts/Metric-Regular.otf);
+  font_style: regular;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  background-image: url("images/LMU+Campus_Monochromatic.png");
+  background-color: black;
+  font-family: Metric;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+h1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+calendar {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0076A5;
+  color: white;
+  text-align: center;
+  z-index: 10;
+}
+
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 5%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Alerts column */
+.alerts-column {
+  flex: 55%;
+  /* Set the width of the main content */
+  background-color: white;
+  /* White background color */
+  padding: 20px;
+  /* Some padding */
+}
+
+/* Calendar column */
+.calendar {
+  flex: 40%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.alert {
+  background-color: #ffee99;
+}
+
+.alert-title {
+  background-color: #ffda1f;
+  font-family: Metric-Bold;
+  padding: 10px;
+}
+
+.alert-content {
+  font-family: Metric;
+  padding: 10px
+}
+
+h2 {
+  color: white;
+  text-align: right;
+}
+
+b_button {
+  display: inline-block;
+  width: 100px;
+  height: 70px;
+  background-color: transparent;
+  border-color: transparent;
+  font-family: Metric;
+  color: #0076A5;
+
+
+  &:hover {
+    cursor: pointer;
+    background-color: #dbdbdb;
+  }
+}
+
+h_button {
+  &:hover {
+    cursor: pointer;
+    background-color: black;
+  }
+}
